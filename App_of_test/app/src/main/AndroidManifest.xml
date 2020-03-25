@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".start_image">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".My_menu"
+                   android:label="My_menu">
+            <intent-filter>
+                <action android:name="com.litreily.My_menu"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".choose_parameters"
+            android:label="choose_parameters">
+            <intent-filter>
+                <action android:name="com.litreily.choose_parameters"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".quick_start_guide"
+            android:label="quick_start_guide">
+            <intent-filter>
+                <action android:name="com.litreily.quick_start_guide"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".learn_knowledge"
+            android:label="learn_knowledge">
+            <intent-filter>
+                <action android:name="com.litreily.learn_knowledge"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".about_us"
+            android:label="about_us">
+            <intent-filter>
+                <action android:name="com.litreily.about_us"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+        android:name=".choose_parameters2_1"
+        android:label="choose_parameters2_1">
+        <intent-filter>
+            <action android:name="com.litreily.choose_parameters2_1"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".choose_parameters2_2"
+            android:label="choose_parameters2_2">
+            <intent-filter>
+                <action android:name="com.litreily.choose_parameters2_2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".choose_parameters2_3"
+            android:label="choose_parameters2_3">
+            <intent-filter>
+                <action android:name="com.litreily.choose_parameters2_3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".choose_parameters3"
+            android:label="choose_parameters3">
+            <intent-filter>
+                <action android:name="com.litreily.choose_parameters3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".choose_parameters4"
+            android:label="choose_parameters4">
+            <intent-filter>
+                <action android:name="com.litreily.choose_parameters4"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".trains_and_test"
+            android:label="trains_and_test">
+            <intent-filter>
+                <action android:name="com.litreily.trains_and_test"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".paint_control"
+            android:label="paint_control">
+            <intent-filter>
+                <action android:name="com.litreily.paint_control"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".report"
+            android:label="report">
+            <intent-filter>
+                <action android:name="com.litreily.report"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".learn1"
+            android:label="learn1">
+            <intent-filter>
+                <action android:name="com.litreily.learn1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".learn2"
+            android:label="learn2">
+            <intent-filter>
+                <action android:name="com.litreily.learn2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".learn3"
+            android:label="learn3">
+            <intent-filter>
+                <action android:name="com.litreily.learn3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".learn4"
+            android:label="learn4">
+            <intent-filter>
+                <action android:name="com.litreily.learn4"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".learn5"
+            android:label="learn5">
+            <intent-filter>
+                <action android:name="com.litreily.learn5"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".learn6"
+            android:label="learn6">
+            <intent-filter>
+                <action android:name="com.litreily.learn6"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".q1"
+            android:label="q1">
+            <intent-filter>
+                <action android:name="com.litreily.q1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".q2"
+            android:label="q2">
+            <intent-filter>
+                <action android:name="com.litreily.q2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".q3"
+            android:label="q3">
+            <intent-filter>
+                <action android:name="com.litreily.q3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".q4"
+            android:label="q4">
+            <intent-filter>
+                <action android:name="com.litreily.q4"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".resul"
+            android:label="resul">
+            <intent-filter>
+                <action android:name="com.litreily.resul"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+</manifest>

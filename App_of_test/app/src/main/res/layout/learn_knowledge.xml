@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backgroubd5"
+    tools:context="com.example.myapplication.My_menu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎来到学习单元，在这里您将学到一些入门的机器学习神经网络的知识！！"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ba1414"
+        android:textSize="20dp"
+        android:id="@+id/textView9" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="什么是机器学习"
+        android:id="@+id/button14"
+        android:layout_below="@+id/textView9"
+        android:background="@drawable/shape"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button20"
+        android:layout_toStartOf="@+id/button20"
+        android:textColor="#fffcfc"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="什么是神经网络"
+        android:id="@+id/button15"
+        android:layout_alignTop="@+id/button14"
+        android:background="@drawable/shape"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/button17"
+        android:layout_alignStart="@+id/button17"
+        android:textColor="#fffcfc"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="神经网络如何工作"
+        android:id="@+id/button16"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button14"
+        android:background="@drawable/shape"
+        android:layout_alignStart="@+id/button14"
+        android:layout_alignRight="@+id/button14"
+        android:layout_alignEnd="@+id/button14"
+        android:textColor="#fffcfc"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="神经网络的组成"
+        android:id="@+id/button17"
+        android:layout_alignBottom="@+id/button16"
+        android:background="@drawable/shape"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_toRightOf="@+id/button20"
+        android:layout_toEndOf="@+id/button20"
+        android:textColor="#fffcfc"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="参数如何更新"
+        android:id="@+id/button18"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button16"
+        android:layout_alignStart="@+id/button16"
+        android:background="@drawable/shape"
+        android:layout_marginBottom="118dp"
+        android:layout_alignRight="@+id/button16"
+        android:layout_alignEnd="@+id/button16"
+        android:textColor="#fffcfc"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="机器学习的一些方法"
+        android:id="@+id/button19"
+        android:layout_alignBottom="@+id/button18"
+        android:layout_alignLeft="@+id/button17"
+        android:background="@drawable/shape"
+        android:layout_alignStart="@+id/button17"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#fffcfc"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回主菜单"
+        android:id="@+id/button20"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fffcfc"
+        android:textSize="15dp" />
+</RelativeLayout>

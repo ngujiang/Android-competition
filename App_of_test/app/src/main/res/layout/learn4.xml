@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/background6"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.myapplication.My_menu">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="    神经网络是机器学习中的一种模型，是一种模仿动物神经网络行为特征，进行分布式并行信息处理的算法数学模型。这种网络依靠系统的复杂程度，通过调整内部大量节点之间相互连接的关系，从而达到处理信息的目的。 一般来说，神经网络的架构可以分为三类： 前馈神经网络： 这是实际应用中最常见的神经网络类型。第一层是输入，最后一层是输出。如果有多个隐藏层，我们称之为“深度”神经网络。他们计算出一系列改变样本相似性的变换。各层神经元的活动是前一层活动的非线性函数。  循环网络： 循环网络在他们的连接图中定向了循环，这意味着你可以按照箭头回到你开始的地方。他们可以有复杂的动态，使其很难训练。他们更具有生物真实性。 循环网络的目的使用来处理序列数据。在传统的神经网络模型中，是从输入层到隐含层再到输出层，层与层之间是全连接的，每层之间的节点是无连接的。但是这种普通的神经网络对于很多问题却无能无力。例如，你要预测句子的下一个单词是什么，一般需要用到前面的单词，因为一个句子中前后单词并不是独立的。 循环神经网路，即一个序列当前的输出与前面的输出也有关。具体的表现形式为网络会对前面的信息进行记忆并应用于当前输出的计算中，即隐藏层之间的节点不再无连接而是有连接的，并且隐藏层的输入不仅包括输入层的输出还包括上一时刻隐藏层的输出。 对称连接网络： 对称连接网络有点像循环网络，但是单元之间的连接是对称的（它们在两个方向上权重相同）。比起循环网络，对称连接网络更容易分析。这个网络中有更多的限制，因为它们遵守能量函数定律。没有隐藏单元的对称连接网络被称为“Hopfield 网络”。有隐藏单元的对称连接的网络被称为玻尔兹曼机。 感知机 其实之前的帖子讲过一些关于感知机的内容，这里再复述一下。 首先还是这张图 这是一个M-P神经元    神经元  一个神经元有n个输入，每一个输入对应一个权值w，神经元内会对输入与权重做乘法后求和，求和的结果与偏置做差，最终将结果放入激活函数中，由激活函数给出最后的输出，输出往往是二进制的，0 状态代表抑制，1 状态代表激活。    感知机的输出  感知机可以分为单层感知机，多层感知机。 我们这里主要讨论的是单层感知机。 而感知机由两层神经网络组成，输入层接收外界输入信号后传递给输出层，输出层是 M-P神经元，   感知机  可以把感知机看作是 n 维实例空间中的超平面决策面，对于超平面一侧的样本，感知器输出 1，对于另一侧的实例输出 0，这个决策超平面方程是 w⋅x=0。 那些可以被某一个超平面分割的正反样例集合称为线性可分(linearly separable)样例集合，它们就可以使用图中的感知机表示。 与、或、非问题都是线性可分的问题，使用一个有两输入的感知机能容易地表示，而异或并不是一个线性可分的问题，所以使用单层感知机是不行的，这时候就要使用多层感知机来解决疑惑问题了。 如果我们要训练一个感知机，应该怎么办呢？ 我们会从随机的权值开始，反复地应用这个感知机到每个训练样例，只要它误分类样例就修改感知机的权值。重复这个过程，直到感知机正确分类所有的样例。每一步根据感知机训练法则来修改权值，也就是修改与输入 xi 对应的权 wi，法则如下：   image 这里 t 是当前训练样例的目标输出，o 是感知机的输出，η 是一个正的常数称为学习速率。学习速率的作用是缓和每一步调整权的程度，它通常被设为一个小的数值（例如 0.1），而且有时会使其随着权调整次数的增加而衰减。 多层感知机，或者说是多层神经网络无非就是在输入层与输出层之间加了多个隐藏层而已，后续的CNN，DBN等神经网络只不过是将重新设计了每一层的类型。感知机可以说是神经网络的基础，后续更为复杂的神经网络都离不开最简单的感知机的模型，   作者：BlackBlog__ 链接：https://www.jianshu.com/p/546dc40b52c8 來源：简书 简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。"
+            android:id="@+id/textView25"
+            android:textColor="@android:color/background_dark" />
+    </ScrollView>
+</RelativeLayout>
